@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src ="main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  </head>
+
+  <body>
+    <div class="container" id ="container">
+      <div class="contactinfo">
+        <span id="logo">Alvin Lagoon</span><br>
+        <img id="emailpic" src= "email_logo.png"><span id = "email"> a********@outlook.com</span><br>
+        <img id="contactpic" src="contact_logo.png"><span id ="phonenumber"> 412-***-****</span></div>
+      <div class="socialmedia">
+        <a href ="https://www.linkedin.com/in/alvin-l-12b2a019a?trk=people-guest_people_search-card" id ="lnk">
+          <img id ="linkedin" src="LI-In-Bug.png"></a>
+      </div>
+      <nav class="navbar">
+        <a href="#recommendation">Recommendations</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#aboutme">About Me</a>
+        
+      </nav>
+    </div>
+
+    <aside>
+      <img id="emoji" src="Image.png">
+    </aside>
+
+    <div class="AboutMe" id="aboutme">
+      <h2>Hi, I am Alvin Lagoon!</h2>
+      <p>
+        I am a full stack devloper, IBM certified 
+        <br>and Graduated from Southern New Hampshire University(SNHU).
+      </p>
+    </div>
+
+  <section>
+    <div class="Skills" id="skills">
+      <h1>Skills</h1>
+      <div class="grid">
+      <span id="python" ><img src = "python.png" alt="">
+        <small>2 years experience</small></span>
+      <span id="cplusplus"><img  src="c++.png">
+        <small>.5 years experience</small></span>
+      <span id="html"><img src="html.png">
+        <small>1 years experience</small></span>
+      <span id="css" ><img src="css.png">
+        <small>1 years experience</small></span>
+      <span id="javascript"><img src="js.png" >
+        <small>1 years experience</small></span>
+      <span id="sql"><img  src="sql.png">
+        <small>1.5 years experience</small></span>
+    </div>
+    </div>
+    <div class="Projects" id="projects">
+      <h1>Projects</h1>
+      <ul>
+      Python calculator<br>
+      </ul>
+      <li>Created a interactive calculator that has user input validation and erorr expections</li>
+      <ul>
+       Python Number Guesser 
+      </ul>
+      <li>Created a number guess where the computer guess the users number and the user guess the computers number</li>
+      <ul>
+        C++ Calculator
+      </ul>
+      <li>Created a simple calculator</li>
+    </div>
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Alvin is a very quick learner and quickly grasps key concepts of Web development. 
+          <span>&#8221;</span>
+        </div>
+      </div>
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+    <div class="homeButton">
+      <a href = "#container"><img src ="home-page-white-icon.png"></a>
+    </div>
+  </section>
+
+  <div class="popup" id="popup">
+    <img src="checkmark.png"/>
+    <h3>Thank you for submitting a recommendation!</h3>
+    <button onclick="showPopup(false)">Ok</button>
+  </div>
+  
+
+  </body>
+
+</html>
